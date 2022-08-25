@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+    *{
+        margin: 0;
+        padding:0;
+        font-family: 'poppins' ,'sans-sarif';
+        box-sizing: border-box;
+    }
+    body{
+        background-color:#fff;
+    }
+    ul{list-style-type: none;
+    
+    
+    }
+    link{
+        border-bottom: 5px;
+    }
+    .accrodian-menu{
+        max-width: 600px;
+        margin: 100px auto 40px;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color:hsl(171, 100%, 50%) ;
+        box-shadow: 0  0 5px  #000;
+    }
+   
+    
+    .dropdown{
+        position: relative;
+        padding: 15px 15px 15px 35px;
+        font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+       transition: all 0.4s ease-out;
+      display: block;
+     cursor: pointer;
+    border-bottom: 2px solid #fff;
+    background:  rgba(255, 153, 0, 0.97);
+    box-shadow: 0  0 10px hsla(128, 100%, 98%, 0.68);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .dropdown i{
+        position:absolute;
+        top: 17px;
+        right: 26px;
+    }
+    
+   .submenu{
+    display: none;
+    
+   }
+ 
+
+    .submenu a{
+        display: block;
+        color: rgba(240, 249, 255, 1);
+        font-weight: 400;
+        padding: 15px 15px 15px 45px;
+        transition: all 0.4s ease-out;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .submenu a:hover{
+    color:rgba(20, 153, 255, 0.97);
+   background-color:#fff;
+    }
+    .active, .accordion:hover {
+  background-color:hsla(220, 100%, 50%, 1); 
+
+}
+.active i{
+    transform: rotate(90deg);
+    color: #fff;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="accrodian-menu">
+<li class="link">
+    <div class="dropdown">
+        
+                    
+                    Html
+                    <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    <ul class="submenu">
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+    </ul>
+</li>
+<li class="link">
+    <div class="dropdown">
+       
+        Css
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    <ul class="submenu">
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+    </ul>
+</li>
+<li class="link">
+    <div class="dropdown">
+       
+        Javascript
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    <ul class="submenu">
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+    </ul>
+</li>
+<li class="link">
+    <div class="dropdown">
+        
+        JQuery
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    <ul class="submenu">
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+    </ul>
+</li>
+<li class="link">
+    <div class="dropdown">
+      
+        React
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    <ul class="submenu">
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+        <li><a href="#">python level 1</a></li>
+    </ul>
+</li>
+
+        </ul>
+    </div>
+    <script>
+      
+       var language=document.querySelectorAll(".dropdown");
+
+       language.forEach(language=>{
+        language.addEventListener('click',function(){
+           
+            language.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+        })
+       })
+
+
+             
+    </script>
+</body>
+</html>
