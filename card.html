@@ -1,0 +1,309 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card slider</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    
+  <style>
+    *{
+    margin:0;
+    padding: 0;
+box-sizing: border-box;
+font-family:'poppins',sans-sarif ;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+}
+
+
+.slider-container{
+    max-width: 1120px;
+    height: 65%;
+    width:80%;
+   
+    padding: 40px 0px;
+}
+.slide-content{
+  
+    margin: 0 40px;
+    
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+   
+    
+    border-radius: 25px;
+    background: #fff;
+}
+.card-image{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.782);
+    padding:2px;
+}
+.card-img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    
+    outline: none;
+    border: 3px solid #eb1966;
+    
+   
+}
+
+
+.image-content,
+.card-content{
+padding: 10px 14px;
+display: flex;
+align-items: center;
+text-align: justify;
+align-items: center;
+flex-direction: column;
+}
+.overlay{
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+width: 100%;
+outline:none;
+background-color:#eb1966;
+border-radius: 25px 25px 0 0;
+
+}
+.image-content{
+row-gap:5px;
+position: relative;
+}
+.name{
+color: #333;
+font-size: 18px;
+font-weight:bold;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.description{
+color: #707070;
+font-size: 14px;
+margin-top: 10px;
+text-align: justify;
+font-family: system-ui;
+}
+.button{
+border: none;
+cursor: pointer;
+padding: 8px 16px;
+background-color:  #eb1966;
+border-radius: 4px;
+color: #FFF;
+
+margin: 25px;
+transition: all 0.4s ease;
+}
+.button:hover{
+background-color: #eb1966;
+}
+.swiper-navBtn{
+color: #f75f97;
+transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+color: #eb1966;
+}
+
+.swiper-navBtn::after,
+.swiper-navBtn::before{
+font-size: 40px;
+}
+.swiper-button-next{
+right: 0;
+}
+
+.swiper-button-prev {
+left: 0;
+}
+.swiper-pagination-bullet{
+background-color: #f75f97;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+background-color:#eb1966;
+
+}
+@media only screen and (max-width:768px) {
+
+.swiper-navBtn{
+display: none;
+}
+.slide-content{
+margin: 0 10px;
+}
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="slider-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="pic1.jpg" alt="" class="card-img">
+                        </div>
+                            </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">David  Young</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem, ipsum dolor.</p>
+                 
+                        <button class="button">View More
+                        </button>
+                    </div>
+                  </div>
+                  <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="pic2.jpg" alt="" class="card-img">
+                        </div>
+                            </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Atticus Finch</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem, ipsum dolor.</p>
+                 
+                        <button class="button">View More
+                        </button>
+                    </div>
+                  </div>
+                  <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="pic3.jpg" alt="" class="card-img">
+                        </div>
+                            </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">David  Wiily</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem, ipsum dolor.</p>
+                 
+                        <button class="button">View More
+                        </button>
+                    </div>
+                  </div>
+
+                  <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="pic4.jpg" alt="" class="card-img">
+                        </div>
+                            </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Harry Potter</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem, ipsum dolor.</p>
+                 
+                        <button class="button">View More
+                        </button>
+                    </div>
+                  </div>
+                  <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="pic5.jpg" alt="" class="card-img">
+                        </div>
+                            </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Emily Elizabeth </h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem, ipsum dolor.</p>
+                 
+                        <button class="button">View More
+                        </button>
+                    </div>
+                  </div>
+
+                  <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="pic6.jpg" alt="" class="card-img">
+                        </div>
+                            </div>
+
+
+                    <div class="card-content">
+                        <h2 class="name">Samantha </h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores Lorem, ipsum dolor.</p>
+                 
+                        <button class="button">View More
+                        </button>
+                    </div>
+                  </div>
+                
+                
+                
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+</body>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    centerSlide:'true',
+    fade:'true',
+    gragCursor:'true',
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets:'true',
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        520:{
+            slidesPerView:2,
+        },
+        950:{
+            slidesPerView:3,
+        }
+    }
+  });
+</script>
+</html>
